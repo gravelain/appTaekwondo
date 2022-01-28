@@ -1,0 +1,17 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="formg">
+                
+        <form [formGroup]="form" (submit)="onSubmit()">
+            <h1 class="h3 nb-3 fw-normal">
+                New Admin system
+            </h1> <br>
+
+            <input type="text" formControlName="name" class="form-control" placeholder="name" required>
+            <br> <input type="email" formControlName="email" class="form-control" placeholder="email" required>
+            <br><input type="password" formControlName="password" class="form-control" placeholder="password" required>
+            <br><input type="text" formControlName="phone" class="form-control" placeholder="phone" required>
+            <br><button class="w-108 btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
